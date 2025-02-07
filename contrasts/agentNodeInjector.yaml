@@ -1,0 +1,11 @@
+apiVersion: agents.contrastsecurity.com/v1beta1
+kind: AgentInjector
+metadata:
+  name: node-contrast
+  namespace: default
+spec:
+  type: node
+  selector:
+    labels:
+      - name: contrast-node-agent
+        value: enabled
